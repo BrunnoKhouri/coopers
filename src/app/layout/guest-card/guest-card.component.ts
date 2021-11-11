@@ -43,7 +43,7 @@ export class GuestCardComponent implements OnInit {
 			formData.append("message", this.form.get("message").value);
 			this.isLoading = true; // sending the post request async so it's in progress
 			this.submitted = false; // hide the response message on multiple submits
-			this.http.post("https://script.google.com/macros/s/AKfycbw8OshFFslsE-3mnS0wUDlNdcuhWAL4QYNSpmyXohRYk2uDOa-bMDGba7U2jOBebggc/exec", formData).subscribe(
+			this.http.post("https://script.google.com/macros/s/AKfycbwOjw-ln339takKzapOav53mwJkv8l5JcrLQurBL7hEyvpzr8k_sIGmjd_iHApN_Rkg/exec", formData).subscribe(
 				(response) => {
 					// choose the response message
 					if (response["result"] == "success") {
