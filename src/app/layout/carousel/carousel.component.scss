@@ -322,7 +322,8 @@ main#carousel {
   
   grid-row: 1/2;
     grid-column: 1/8;
-    width: 845px;
+    width: 100%;
+    max-width: 845px;
     height: 406px;
     display: flex;
     align-items: center;
