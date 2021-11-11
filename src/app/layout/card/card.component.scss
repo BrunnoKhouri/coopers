@@ -1,0 +1,129 @@
+section {
+    display: flex;
+    justify-content: center;
+    background-image:  url(./../../../assets/layout/triMenor.png), url(./../../../assets/layout/triMaior.png),;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: left;
+      background-position-y: 92px, bottom;
+   
+  }
+  
+  
+  .example-card {
+    max-width: 380px;
+    padding: 0px !important;
+    background-color: #ffff;
+    color: #000;
+    z-index: 1;
+  }
+  
+  
+  .header {
+    background-color: #4ac959;
+    width: 100%;
+    height: 20px;
+  }
+  
+  .header-text {
+    padding: 40px 50px 44px;
+  }
+  
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 24px;
+    text-align: center;
+    /* identical to box height, or 60% */
+  }
+  
+  h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  
+  h4 {
+    word-break: break-word;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0px;
+    text-align: center;
+  }
+  
+  .content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 30px;
+  }
+  
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  mat-icon {
+    margin-right: 10px;
+  }
+  
+  .icon-check {
+    color: #4ac959;
+  }
+  
+  .icon-Notcheck {
+    color: red;
+  }
+  
+  .content-button {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  .button {
+    margin-bottom: 40px !important;
+    width: 300px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .img-maior {
+    position: absolute;
+    top: 1385px;
+    z-index: 0;
+  }
+  
+  .img-menor {
+    position: absolute;
+    top: 1367px;
+  }
+  
+  @media screen and (max-width: 803px) {
+    section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .example-card {
+        margin-bottom: 10px !important;
+    }
+  }
+  

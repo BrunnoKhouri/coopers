@@ -1,0 +1,51 @@
+<section>
+    <mat-card class="content-card mat-elevation-z8">
+        <img class="perfil" src="./../../../assets/form/tatiana.png" alt="">
+        <img class="formImg" src="./../../../assets/form/grafismo.png" alt="">
+        <div class="content-form">
+            <img class="PolImg" src="./../../../assets/form/PolygonGreen.png" alt="form">
+            <img class="vectorImg" src="./../../../assets/form/Vector.png" alt="Vector">
+            <mat-card-title class="title">
+                <h1>Get in</h1>
+                <h3>touch</h3>
+            </mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+            <div class="example-container">                
+                  <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput [formControl]="name" required>
+                        <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+                    </mat-form-field>
+                    <div style="width: 100%;">
+                        <mat-form-field style="width: 45%; margin-right: 5%;">
+                            <mat-label>Email</mat-label>
+                            <input matInput [formControl]="email" placeholder="email@example.com" required>
+                            <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
+                        </mat-form-field>
+                        <mat-form-field style="width: 45%;">
+                            <mat-label>Telephone</mat-label>
+                            <input matInput [formControl]="tel" placeholder="( )_____-____" required>
+                            <mat-error *ngIf="tel.invalid">Please enter a valid phone</mat-error>
+                        </mat-form-field>
+                    </div>                    
+                    <mat-form-field>
+                        <mat-label>Message</mat-label>
+                        <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
+                        <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
+                        <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
+                    </mat-form-field>
+                    <button [disabled]="isLoading" class=" button" type="submit">Send now</button>
+                    <input [formControl]="honeypot" class="hidden" type="text" />
+                    <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+                        <span>{{responseMessage}}</span>
+                    </div>
+                </form>
+            </div>
+             <mat-card-actions class="content-button">
+                
+            </mat-card-actions> 
+        </div>
+    </mat-card>
+
+</section>

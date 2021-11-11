@@ -1,0 +1,42 @@
+footer {
+    width: 100%;
+    height: 205px;  
+    margin-top: 243px;
+    background-image: url(./../../../assets/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 83% */
+  
+  
+    color: #FFFFFF;
+  }
+  
+  p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+  
+  
+    color: #FFFFFF;
+  }
+  
+  img {
+      width: 100%;
+      max-width: 511px;
+  }
+  

@@ -1,0 +1,117 @@
+.content-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+   
+  }
+  
+  .content-menu__text {    
+    width: 60%;
+    padding: 81px 0px 0px 80px;    
+    h1 {
+      word-break: break-word;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 64px;
+      
+      }
+    }
+  
+    h2 {
+       word-break: break-word;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 64px;
+      color: #84da8e;
+    }
+  
+    p {
+       word-break: break-word;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 44px;
+    }
+  
+    button {
+      width: 100%;
+      max-width: 400px;
+      height: 64px;
+      border-radius: 10px;
+      background-color: #4AC959;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      color: #FFFFFF;
+      ;
+    }
+    .content-menu__title{
+        margin-bottom: 54px;
+    }
+  
+  
+  
+  .content-menu__images{    
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ } 
+
+  .Image-menu{
+    z-index: 2;
+    width: 100%;
+    max-width: 580px;     
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px; 
+  }
+
+  @media screen and (max-width: 1255px) {
+    .content-menu__images {     
+        opacity: 0%;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    .content-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        width: 100%;
+        max-width: 400px;
+        height: 64px;
+        border-radius: 10px;
+        background-color: #000000 !important;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        background: #FFFFFF;
+
+        
+    }
+    .content-menu__images {     
+        opacity: 0%;
+    }
+    .content-menu__text{
+        width: 60%;
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
